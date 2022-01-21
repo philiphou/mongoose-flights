@@ -3,6 +3,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
-}
+th,td {
+  text-align: left;
+  vertical-align:baseline;
+  background-color: rgb(43, 226, 217);
+  padding: 5px 20px;
+
+};
