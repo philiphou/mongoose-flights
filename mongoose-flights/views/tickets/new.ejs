@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+
+<link rel="stylesheet" href="../../../stylesheets/style.css" type="text/css" />
+<h1>Add New ticket </h1>
+<form class="add-new-ticket" action="/flights/<%=flight%>/tickets" method="POST">
+    <label>Seat(A1 - F99):
+        <input name="seat" required pattern="[A-F][1-9]\d?">
+    </label>
+    <label>Price:
+        <input name="price">
+    </label>
+    <button type="submit">Submit</button>
+</form><br>
+
+
+<%- include('../partials/footer.ejs') %>
