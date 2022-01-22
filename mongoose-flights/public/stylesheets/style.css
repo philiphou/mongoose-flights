@@ -2,14 +2,20 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+th {
+  background-color: blue;
+  color:white;
+}
+tr:nth-child(even){
+  background-color:rgb(199, 192, 191);
+}
 th,td{
-  
-padding:20px;
+border-bottom: 1px solid gold;
+padding:8px;
 text-align: left;
-background-color: #32b7b9;
-color:black
+
 };
+
 
 .choose {
   background-color:rgb(57, 187, 31);
