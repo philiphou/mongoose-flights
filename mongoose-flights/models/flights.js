@@ -1,5 +1,12 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const destinationSchema = new Schema({
+    airport: String,
+    arrival: Date
+}, {
+    timestamps: true
+});
+   
 const flightSchema = new Schema({
     airline: {
         type: String,
@@ -21,7 +28,9 @@ const flightSchema = new Schema({
         default: function () {
         return Date.now() + 365*24*60*60000
      }
-    }
-   
+    },
+    destinations: [destinationSchema],
+
 });
+ 
 module.exports = mongoose.model('Flight',flightSchema);
