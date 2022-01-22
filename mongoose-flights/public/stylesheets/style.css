@@ -3,13 +3,20 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-th{
-  text-align: left;
-  vertical-align:baseline;
-  background-color: rgb(43, 226, 217);
-  padding: 5px 20px;
-
+th,td{
+  
+padding:20px;
+text-align: left;
+background-color: #32b7b9;
+color:black
 };
+
+.choose {
+  background-color:rgb(57, 187, 31);
+  padding:5px;
+  height: 20px;
+}
+
 .show-page-part2 {
   display: flex;
   gap: 30px;
