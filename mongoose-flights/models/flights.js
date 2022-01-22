@@ -8,6 +8,7 @@ const destinationSchema = new Schema({
 });
    
 const flightSchema = new Schema({
+  
     airline: {
         type: String,
         required: true,
