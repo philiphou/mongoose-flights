@@ -9,7 +9,7 @@ module.exports = {
 };
 function index(req, res) {
     Flight.find({}, function(err, flights) {
-        console.log(flights);
+        // console.log(flights);
         res.render('flights/index', { flights })
     })
 }
@@ -34,6 +34,7 @@ function show(req, res) {
 };
     
 function deleteFlight(req,res){
+    
     Flight.findByIdAndDelete(req.params.id,function(err){
         if(err){
             console.log(err)
